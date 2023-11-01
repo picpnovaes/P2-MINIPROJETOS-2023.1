@@ -14,7 +14,7 @@ public class App {
     
 
 
-    
+    /////////////////////////////////////////////////Capítulo 1////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
     
@@ -124,7 +124,7 @@ public class App {
 
             
 
-
+        //Primeiro Final
     }
     else if(caminhos == 2){
         System.out.println("Você escolheu a opção" + caminhos);
@@ -137,6 +137,44 @@ public class App {
     else {
         System.out.println("Escolha inválida, tente novamente.");
     }
-    escolhas.close();
+    
+
+    /////////////////////////////////////Capítulo 2////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    System.out.println(
+        "Antes precisamos conhecer um pouco mais sobre esse John Smith, então iremos voltar um pouco atrás."
+        + "Um inventor nato, John Smith visava a criação de uma chave mestra que pudesse abrir qualquer fechadura, entretanto ele não entendia que a vasta tecnologia que ele colocou em uma única chave a deixou extramente poderosa."+
+        "Aí que entra um jovem rapaz chamado Peter, ele era assistente de John Smith em suas criações, um dia John pediu para que ele testasse");
+        System.out.println(
+            "Mas havia um único problema, Peter não tinha uma mente muito estável para enfrentar tal ato..."
+            +"John - Você pode ir para qualquer lugar com esta chave mas lembre-se sempre de qual porta você abriu, se perder em uma linha temporal não vai ser uma cosia muito agradável.");
+            System.out.println("Peter pega o relógio e a chave parte para a primeira porta, ele só precisa pensar onde ir. Mas não sabe se vai para o dia em que ele nasceu ou viajar para o futuro.");
+            
+            System.out.println("Opção 1 -Viajar para o dia em que nasceu; Opção 2 - Viajar para o futuro ");
+            int caminho3 = escolhas.nextInt();
+            if(caminho3 == 1){
+                
+                Avatar.viajar = true;
+                Avatar.viajando();
+                Avatar.loucura(); 
+                System.out.println(
+                    "Viajando para o passado, Peter vê sua mãe e seu pai juntos em seu nascimento. Ainda confuso por causa da viagem, ele não sabe se aquilo" 
+                    + " realmente aconteceu, então ele decide voltar de onde veio. Mas ele não sabe se medita antes de ir para outra viagem");
+                System.out.println("Opção 1 - Viajar novamente; Opção 2 - Meditar");
+                int caminho31 = escolhas.nextInt();
+                if(caminho31 == 1){
+                    Avatar.viajar = true;
+                    Avatar.viajando();
+                    Avatar.loucura();
+                    
+
+                }
+                else if(caminho31 == 2){
+                    Avatar.meditar();
+                    System.out.println("Peter está pronto para continuar suas viagens, ele se recuperou um pouco mentalmente.");
+                }
+                
+            }
+
 }
 }
