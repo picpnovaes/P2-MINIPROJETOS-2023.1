@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class App {
+public class Miniprojetos{
     public static void main(String[] args) throws Exception {
         Scanner escolhas = new Scanner(System.in);
         System.out.println("Olá, bem vindo ao  nosso querido hotel. Poderia informar seu nome por favor?");
