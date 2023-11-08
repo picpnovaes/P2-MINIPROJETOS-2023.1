@@ -42,10 +42,9 @@ public class Avatar{
                 }        
 
         
-            }
+            }            
 }
 
-        
 
 
 
