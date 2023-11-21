@@ -3,21 +3,23 @@ import java.util.Scanner;
 public class Capitulo {
     private String nome;
     private String texto;
-    private String[] escolhas;
+    private Escolha[] escolhas;
     private Personagem personagem;
     private int alteracaoEnergia;
     private Scanner escaneador;
 
     
-    public Capitulo(String nome, String texto, String[] escolhas, Personagem personagem, int alteracaoEnergia, Scanner escaneador) {
+    public Capitulo(String nome, String texto, Personagem personagem, int alteracaoEnergia, Scanner escaneador) {
         this.nome = Avatar.protagonista1;
         this.texto = texto;
-        this.escolhas = escolhas;
         this.personagem = personagem;
         this.alteracaoEnergia = alteracaoEnergia;
         this.escaneador = escaneador;
     }
 
+    public void adicionarEscolhas(Escolha[] escolhas) {
+        this.escolhas = escolhas;
+    }
     
     public void mostrar() {
         System.out.println(nome);
@@ -29,7 +31,12 @@ public class Capitulo {
         
         personagem.alterarEnergia(alteracaoEnergia);
     }
-
+    public void executar() {
+        mostrar();
+        int escolha = escolher();
+        Capitulo proximoCapitulo = escolhas[escolha].proximo;
+        proximoCapitulo.executar();
+    }
     
     public int escolher() {
         while (true) {
