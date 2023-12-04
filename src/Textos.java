@@ -12,22 +12,24 @@ public class Textos {
        
       Capitulo inicio = new Capitulo( Avatar.protagonista1 , ", boa noite. O seu quarto encontra-se a direita do primeiro corredor. Pedimos coerentemente que ignore o barulho do quarto 1412, só está em reforma." +
      "Você segue em direção ao primeiro corredor, porém não lembra em direção deve ir, qual você escolhe?"
-     , protagonista1,20, scan) ;
+     , protagonista1, scan) ;
+        
     
    
     //Direita
     Capitulo capitulo1 = new Capitulo(Avatar.protagonista1,"Você acaba observando que o quarto 1412 é ao lado do seu, e um desconhecido o chama para ver o que haverá de novidade nesse quarto. " +
-    "Aceita ir conhecer ou irá seguir para seu quarto?",protagonista1,-10,scan );
+    "Aceita ir conhecer ou irá seguir para seu quarto?",protagonista1,scan );
     
     
     Capitulo capitulo11 = new Capitulo(Avatar.protagonista1,"Você anda em direção ao seu quarto e o abre. " + 
     "Assim que entra, se deita e percebe que o barulho do quarto 1412, ao lado do seu, parou. Ao olhar para cima, percebe que há uma marca antiga na parede de seu quarto. "+
     "Como se houvesse um quadro que ali estava, porém deveria ter sido retirado.Após isso, você se deita e descansa pelo resto da noite."+
-    "Fim!",protagonista1,0,null);
+    "Fim!",protagonista1,null);
+    
     
     //Esquerda
     Capitulo capitulo12 = new Capitulo(null,"Você acaba se perdendo no meio do caminho, porém o recepcionista do hotel lhe encontra e o guia até a porta de seu quarto. " + 
-    "Assim que entra, se deita e percebe que o barulho do quarto 1412, ao lado do seu, parou. Após isso, você se deita e descansa pelo resto da noite."+ "Fim!", protagonista1, 0, null );
+    "Assim que entra, se deita e percebe que o barulho do quarto 1412, ao lado do seu, parou. Após isso, você se deita e descansa pelo resto da noite."+ "Fim!", protagonista1, null );
     
     
     
@@ -46,7 +48,7 @@ public class Textos {
      "Mesmo sem acreditar, você vai até a rua e percebe que até mesmo os arredores estão totalmente diferentes."+
      "De repente você avista o mesmo sujeito desconhecido, ele lhe reconhece e o chama novamente."+
      "Desconhecido- Gostou do quadro?(O mesmo dando gargalhadas). Pegue essa chave, acredite em mim, mas ela vai ser bem útil."+
-     "A chave parecia bem comum, porém igual as chaves dos quartos do hotel. Mas com uma entonação de cor diferente, ela ainda brilhava bastante parecia lhe chamar cada vez mais que você a encarava.",protagonista1,0,scan);
+     "A chave parecia bem comum, porém igual as chaves dos quartos do hotel. Mas com uma entonação de cor diferente, ela ainda brilhava bastante parecia lhe chamar cada vez mais que você a encarava.",protagonista1,scan);
     
      
      Capitulo capitulo14 = new Capitulo(null,"Ao pegar a chave, sente uma vibração em seu metal. Ao olhar para frente, o desconhecido e suspeito sujeito desparece, sobrando somente isso que lhe deu."+
@@ -55,14 +57,14 @@ public class Textos {
     " O nome era Hotel Valentine, número 1412. Você entra no hotel rapidamente e percebe que as pessoas estão lhe encarando por conta de sua vestimenta ser totalmente incomum naquele local."+
     "Você corre rapidamente para seu quarto. Quando entra, percebe que há uma maleta com roupas adequadas para essa época."+
     "Por baixo das roupas, havia uma espécie de relógio que você nunca tinha visto. Você não sabe se deve pegar, ou simplesmente largá-lo aí."
-    ,protagonista1, -10,scan);
+    ,protagonista1, scan);
     
      Capitulo capitulo15 = new Capitulo(null,"De repente tudo fica escuro novamente...Você acorda no quarto 1412, com um barulho estrondoso de obras."+
      "Você pensa que tudo foi um sonho. O desconhecido sujeito lhe ajuda a se levantar e fala-"+
      " Desconhecido- Parece que você não está muito bem, venha deixe-me tirá-lo daqui."+
      " Após sair, o desconhecido o leva para a porta e com olhar que parecia ser de desapontamento, o deixa ali."+
      " Assim que entra em seu quarto, logo você se deita e percebe que há um quadro com uma imagem diferente, parecia ser do ano atual, porém transmitia uma energia vazia e solitária..."+
-     " Fim!", protagonista1, 0, null);
+     " Fim!", protagonista1, null);
     
      Capitulo capitulo16 = new Capitulo(null,"Ao pegar o relógio, você percebe que ele mostra uma porcentagem, como se fosse algo relacionado a bateria. Porém está escrito em sua interface - '50 aberturas restantes .'"+
      " Qual seria o significado? Mas ao olhar mais afundo na maleta, há também um papel com instruções sobre o relógio."+
@@ -72,7 +74,7 @@ public class Textos {
      " O recado -Olá, gostou da chave? Aproveite sua aventura aqui. Você pode voltar quando quiser de onde você veio ou simplesmente ir para outros lugares especiais com ela. Mas lembre-se: NÃO ABRA PORTAS DEMAIS, VOCÊ PODE SE PERDER."+
      " Assinado - Smith, John." +
      " Você pega a maleta e sai do hotel, em busca de respostas e atrás desse tal de 'Jonh Smith'. Porém ao sair, algo lhe chama para explorar essa cidade..."+
-     " Continua no próximo capítulo!",protagonista1,-10,null);
+     " Continua no próximo capítulo!",protagonista1,null);
     
     Capitulo capitulo17 = new Capitulo(null,"Você deixa o relógio, fecha a maleta e sai em direção a porta do quarto." +
     "Ao sair do quarto, percebe algo estranho em sua roupa, e a chave começa a vibrar com muito intesidade."+
@@ -85,23 +87,23 @@ public class Textos {
      " O recado -Olá, gostou da chave? Aproveite sua aventura aqui. Você pode voltar quando quiser de onde você veio ou simplesmente ir para outros lugares especiais com ela. Mas lembre-se: NÃO ABRA PORTAS DEMAIS, VOCÊ PODE SE PERDER."+
      " Assinado - Smith, John." +
      " Você pega a maleta e sai do hotel, em busca de respostas e atrás desse tal de 'Jonh Smith'. Porém ao sair, algo lhe chama para explorar essa cidade..."+
-     " Continua no próximo capítulo!",protagonista1,-10,null);
+     " Continua no próximo capítulo!",protagonista1,null);
 
      Escolha[] escolhasInicio = {
-        new Escolha("Opção 1- Direita", capitulo1),
-        new Escolha("Opção 2- Esquerda", capitulo12)
+        new Escolha("Opção 1- Direita", capitulo1,30),
+        new Escolha("Opção 2- Esquerda", capitulo12,20)
     };
     Escolha[] escolhasCapitulo1 = {
-        new Escolha("Opção 1- Você aceita e vê o que terá de tão inovador nesse quarto.", capitulo13),
-        new Escolha("Opção 2 - Você se nega educadamente e vai em direção ao seu.", capitulo11)
+        new Escolha("Opção 1- Você aceita e vê o que terá de tão inovador nesse quarto.", capitulo13,40),
+        new Escolha("Opção 2 - Você se nega educadamente e vai em direção ao seu.", capitulo11,30)
     };
     Escolha[] escolhasCapitulo13 = {
-        new Escolha("Opção 1 - Pegue a chave", capitulo14),
-        new Escolha("Opção 2 - Rejeite-a", capitulo15)
+        new Escolha("Opção 1 - Pegue a chave", capitulo14,25),
+        new Escolha("Opção 2 - Rejeite-a", capitulo15,20)
     };
     Escolha[] escolhascapitulo14 = {
-        new Escolha("Opção 1 - Pegue a chave", capitulo16),
-        new Escolha("Opção 2 - Já aconteceram coisas estranhas demais por hoje, deixe-o aí.", capitulo17)
+        new Escolha("Opção 1 - Pegue a chave", capitulo16,15),
+        new Escolha("Opção 2 - Já aconteceram coisas estranhas demais por hoje, deixe-o aí.", capitulo17,10)
     };
 
 

@@ -5,15 +5,13 @@ public class Capitulo {
     private String texto;
     private Escolha[] escolhas;
     private Personagem personagem;
-    private int alteracaoEnergia;
     private Scanner escaneador;
 
     
-    public Capitulo(String nome, String texto, Personagem personagem, int alteracaoEnergia, Scanner escaneador) {
+    public Capitulo(String nome, String texto, Personagem personagem, Scanner escaneador) {
         this.nome = Avatar.protagonista1;
         this.texto = texto;
-        this.personagem = personagem;
-        this.alteracaoEnergia = alteracaoEnergia;
+        this.personagem = personagem;       
         this.escaneador = escaneador;
     }
 
@@ -21,7 +19,7 @@ public class Capitulo {
         this.escolhas = escolhas;
     }
     
-    public void mostrar() {
+    private void mostrar() {
         System.out.println(nome);
         System.out.println(texto);
         
@@ -29,13 +27,16 @@ public class Capitulo {
             System.out.println(i + ". " + escolhas[i]);
         }
         
-        personagem.alterarEnergia(alteracaoEnergia);
+        
+
     }
     public void executar() {
         mostrar();
         int escolha = escolher();
-        Capitulo proximoCapitulo = escolhas[escolha].proximo;
+        Escolha escolhaAtual = escolhas[escolha];
+        Capitulo proximoCapitulo = escolhaAtual.proximo;
         proximoCapitulo.executar();
+        personagem.setSanidade(personagem.getSanidade() + escolhaAtual.getAlteracaoSanidade());
     }
     
     public int escolher() {
