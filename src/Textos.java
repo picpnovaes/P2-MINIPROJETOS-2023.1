@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Textos {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        Personagem protagonista1 = new Personagem(30);
+        Personagem protagonista1 = new Personagem("Peter", 30);
 
 
     /////Capítulo 1//////////////////////////////////////
