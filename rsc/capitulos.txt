@@ -1,7 +1,7 @@
 ID
 Raiz
 TEXTO
-Bem vindo ao Hotel
+Boa noite. O seu quarto encontra-se a direita do primeiro corredor. Pedimos coerentemente que ignore o barulho do quarto 1412, só está em reforma."
 PERSONAGEM
 Protagonista
 VARIACOES
