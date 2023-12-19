@@ -7,7 +7,7 @@ public class Escolha {
     public Escolha(String texto, Capitulo proximo, int alteracaoSanidade) {
         this.texto = texto;
         this.proximo = proximo;
-        this.alteracaoSanidade = alteracaoSanidade;
+        this.alteracaoSanidade =alteracaoSanidade;
     }
     public String getTexto() {
         return texto;
@@ -21,8 +21,4 @@ public class Escolha {
     public int getAlteracaoSanidade() {
         return alteracaoSanidade;
     }
-    public String[] split(String string) {
-        return null;
-    }
-    
 }

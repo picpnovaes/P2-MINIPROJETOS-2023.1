@@ -1,7 +1,7 @@
 ID
 Raiz
 TEXTO
-CARAMBA QUE PINTO ENORME
+Bem vindo ao Hotel
 PERSONAGEM
 Protagonista
 VARIACOES

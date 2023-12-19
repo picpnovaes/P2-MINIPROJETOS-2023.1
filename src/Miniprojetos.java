@@ -175,7 +175,6 @@ public class Miniprojetos{
                 }
                 
             }
-            escolhas.close();
 
 }
 }

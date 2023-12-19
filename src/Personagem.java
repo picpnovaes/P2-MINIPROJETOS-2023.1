@@ -1,7 +1,7 @@
 public class Personagem {
     private int sanidade;
 
-    public Personagem(String nome, int sanidadeInicial) {
+    public Personagem(int sanidadeInicial) {
         setSanidade(sanidadeInicial);
     }
     public int getSanidade(){
